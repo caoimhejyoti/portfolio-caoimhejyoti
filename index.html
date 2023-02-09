@@ -6,6 +6,7 @@
     <!-- FIXME: redo title once complete --> <title>REWORK-CaoimheJyoti</title>
 
     <!-- links -->
+    <!-- FIXME: add fonts -->
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
@@ -13,12 +14,12 @@
 
 <body>
     <!-- Navbar -->
-    <nav class = "navbar navbar-expand-lg navbar-nav-scroll sticky-top" id = "navbar">
+    <nav id = "navbar" class = "navbar navbar-expand-lg navbar-nav-scroll sticky-top">
         <div class = "container-fluid">
             <div class = "collapse navbar-collapse col-3" id="navbarNavAltMarkup">
                 <div class = "navbar-nav ">
                     <a class = "nav-link" href="#about">About</a>
-                    <a class = "nav-link" href="#work">Work</a>
+                    <a class = "nav-link" href="#portfolio">Portfolio</a>
                 </div>
             </div>
             <a class="navbar-brand justify-content-center" href="#">CaoimheJyoti</a>
@@ -34,16 +35,85 @@
     </nav>    
 
     <!-- Hero -->
-    <section id="hero" class="container">
-        <div id="hero-text" class="col-6">
+    <section id="hero" class="container-fluid row col-12 my-5">
+        <div id="hero-text" class="col-8 col-md-8 col-lg-8">
             <h1 class="intro">Hi! I am Caoimhe Jyoti.</h1>
             <h2 id="hero-intro">I am a full stack web developer in training, living in WA.</h2>
             <p>With a love of solving puzzels and 10 years experience in the Arts and Events industry, I am currently studing Full Stack Web Development with the University of Western Australia. </p>
         </div>
 
-        <div id="hero-img" class="float-end">
+        <div id="hero-img" class="col-4 col-md-4 col-lg-4 justify-content-end">
             <img src="/assets/img/laugh.jpeg" alt="Black and white image of CaoimheJyoti looking down while laughing. She is blad and wearing a black t-shirt. The photo finishes mid-shoulder.">
         </div>
     </section>
+
+    <!-- About Me -->
+    <section id="about" class="">
+        <h1>About Me</h1>
+        <p>Currently based in Western Australia.</p>
+        <p>With experience in web developement, print media and live events I am here to help you turn your imagination into real life!</p>
+        <p>I am currently open to work opportunities while studying.</p>
+
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="">
+        <section id="portfolio-highlight" class="portfolio-hightlight">
+            <div id="portfolio-hightlight-title" class="portfolio-hightlight">
+                <h1>My Latest Project</h1>
+            </div>
+            <div id="portfolio-hightlight-img" class="portfolio-hightlight">
+                <img src="" alt="Screen shot of latest Project">
+            </div>
+            <div id="portfolio-hightlight-text" class="portfolio-hightlight">
+                <p>INSERT TEXT HERE</p>
+            </div>
+        </section>
+
+        <section id="portfolio-more" class="">
+            <h2>More projects</h2>
+            <section id="portfolio-more" class="card row">
+                <section id="portfolio-more-1" class="col-5 col-md-5 col-lg-3">
+                    
+                </section>
+                <section id="portfolio-more-2" class="col-5 col-md-5 col-lg-3">
+
+                </section>
+                <section id="portfolio-more-3" class="col-5 col-md-5 col-lg-3">
+
+                </section>
+            </section>
+        </section>
+    </section>
+    
+    <!-- Contact Me -->
+    <section id="contact">
+        <h1>Contact</h1>
+            <form id="contact" method="POST" action="mailto:caoimhejyoti@gmail.com" enctype="multipart/form-data" alt="this is a contact me form"></form>
+                <input type="hidden" value="form-1">
+                <div class="form-floating mb-3 forminput">
+                    <input id = "floatingInput" class="form-control" type="text" alt="Enter your name" placeholder="Enter your Name">
+                    <label for = "floatingInput contactlabel">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input id = "floatingInput" class="form-control" type="email" alt="Enter your email" placeholder="example@example.com">
+                    <label for = "floatingInput">Email Address</label>
+                </div>
+                <button type="submit" form="contact__form" class="formbutton" value="Send" alt="submit your message">SUBMIT</button>
+            </form>
+    </section>
+
 </body>
+
+<footer>
+    <section id="footer" class="container-fluid p-3 text-center">
+        <p> Designed by <a href="https://github.com/caoimhejyoti" target="blank"> © CaoimheJyoti</a></p>
+        <a href="https://github.com/caoimhejyoti" target="_blank">
+            <img src="assets/img/GitHub-Mark-Light-120px-plus.png" alt="Github white logo">
+        </a>
+        <a href="https://www.linkedin.com/in/caoimhe-young-84b58b61/" target="_blank">
+            <img src="assets/img/In-White-128-┬«@2x.png" alt="Linkedin white logo">
+        </a>
+    </section>
+</footer>
 </html>
